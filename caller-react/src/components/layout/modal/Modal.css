@@ -1,0 +1,75 @@
+.modal {
+  width: 400px;
+  height: auto;
+  border: 1px solid #aaa;
+  position: fixed;
+  z-index: 500;
+  box-shadow: 1px 3px 10px #aaa;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+}
+
+.modal header {
+  padding: 10px;
+  text-align: center;
+  background: #e0414f;
+  color: #fff;
+  border-radius: 25px 25px 0 0;
+}
+
+.modal section, .light-bg {
+  padding: 20px;
+  background: #f5f6fa;
+}
+
+.modal section .timer {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  color: #222222;
+}
+
+.modal section svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.modal footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f5f6fa;
+  padding: 15px;
+  border-radius:  0 0 25px 25px;
+  border-top: 1px dashed #006FC4;
+}
+
+.modal footer .label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #006FC4;
+}
+
+.modal footer .value {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.modal button.cancel {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border: 1px solid var(--iconcolor);
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  --iconcolor: #FF2744;
+} 

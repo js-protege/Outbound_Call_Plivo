@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica Neue;
+  background-color: #e0414f;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html, body {
+  height: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.pull-right {
+  float: right;
+}
+.full-width {
+  width: 100%;
+}
+.m-r-10 {
+  margin-right: 10px;
+}
+.m-l-10 {
+  margin-left: 10px;
+}
+.m-t-10 {
+  margin-top: 10px;
+}
+.m-b-10 {
+  margin-bottom: 10px;
+}
+.m-b-20 {
+  margin-bottom: 20px;
+}
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+.display-space-between {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.input-wrapper input.input-box , select.input-box {
+  height: 30px;
+  color: #555;
+  outline: none;
+  border: 1px solid #bbb;
+  padding: 5px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  position: relative;
+}
+.input-wrapper input.input-box.has-error {
+  border: 1px solid #ed5c5c !important;
+}
+.input-wrapper input.input-box.has-error ~ label.placeholder {
+  color: #ed5c5c !important;
+}
+.input-wrapper input.input-box.has-error-req {
+  border: 1px solid #ed5c5c !important;
+}
+.input-wrapper input.input-box.has-error-req ~ label.placeholder {
+  color: #bbb !important;
+}
+.input-wrapper input.input-box:invalid + label.placeholder {
+  transform: translateY(0);
+}
+.input-wrapper input.input-box.star {
+  border-color: #e0414e;
+}
+.input-wrapper input.input-box.star + label.placeholder {
+  color: #e0414e;
+}
+.input-wrapper label.placeholder {
+  position: absolute;
+  pointer-events: none;
+  color: #bbb;
+  left: 6%;
+  font-weight: normal;
+  top: 10px;
+  font-size: 15px;
+  margin: 0;
+}
+.input-wrapper input.input-box:focus, .input-wrapper input.input-box:not(:placeholder-shown) {
+  border-color: #2b96f1;
+  color: #050a4e;
+}
+.input-wrapper input.input-box:focus ~ label.placeholder, .input-wrapper input.input-box:not(:placeholder-shown) ~ label.placeholder {
+  color: #2b96f1;
+  transform: translateY(-20px);
+  font-weight: bold !important;
+  z-index: 2;
+  left: 20px;
+  top: 14px;
+  pointer-events: none;
+  background: #fff;
+  transition: transform 100ms ease;
+  transform: translateY(-20px);
+  margin-top: 0 !important;
+  padding: 0 2px;
+  font-size: 13px;
+}

@@ -1,0 +1,23 @@
+{
+  "appName": "plivo",
+  "env": "dev",
+  "sequelize": {
+    "primary": {
+      "database": "calls",
+      "username": "root",
+      "password": "Medi@123",
+      "options": {
+        "dialect": "mysql",
+        "host": "127.0.0.1",
+        "logging": false,
+        "insecureAuth": true,
+        "pool": {
+          "max": 20,
+          "min": 2,
+          "acquire": 30000,
+          "idle": 10000
+        }
+      }
+    }
+  }
+}
